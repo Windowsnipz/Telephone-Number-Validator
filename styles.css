@@ -117,7 +117,15 @@ main {
     padding: 10px 0;
 }
 
-#quote-btn {
+#number {
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+#btn {
     display: block;
     margin: 5px auto;
     padding: 8px;
@@ -131,14 +139,14 @@ main {
     transition: color 0.2s, background-color 0.2s;
 }
 
-#quote-btn:hover {
+#btn:hover {
     cursor: pointer;
     color: var(--gray1);
     background-color: var(--blue1);
     transition: color 0.2s, background-color 0.2s;
 }
 
-#quote-btn:active {
+#btn:active {
     color: var(--orange1);
     background-color: var(--orange1);
 }
