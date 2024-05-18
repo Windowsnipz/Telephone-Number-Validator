@@ -13,15 +13,25 @@ checkBtn.addEventListener('click', () => { // Check phone number
 });
 
 clearBtn.addEventListener('click', () => { // Clear results div
-
+    resultsDiv.classList.remove('section');
+    resultsDiv.innerHTML = '';
+    userInput.value = '';
 });
 
 
 function validateNumber() {
-
-    return 'true';
+    const numRegex = /^1?[-\s]?(\()?\d{3}(\))?[-\s]?\d{3}[-\s]?\d{4}$/;
+    if (userInput.value.match(numRegex)) {
+        return 'Valid US number: ';
+    } else {
+        return 'Invalid US number: ';
+    }
 }
 
 function appendResult(str) {
-
+    const resultString = str + userInput.value;
+    const resultText = document.createElement('h4');
+    resultText.textContent = resultString;
+    resultsDiv.appendChild(resultText);
+    resultsDiv.classList.add('section');
 }
