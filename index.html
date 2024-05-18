@@ -26,12 +26,15 @@
                 <p>By Noah Strickland</p>
                 <div id="input-wrapper">
                     <h4>Enter a phone number:</h4>
-                    <input id="number" type="number" required placeholder=" Enter a number">
-                    <button id="btn">Check</button>
+                    <input id="user-input" type="number" required placeholder=" Enter a number">
+                    <div id="btn-wrapper">
+                        <button id="check-btn" class="btn">Check</button>
+                        <button id="clear-btn" class="btn">Clear</button>
+                    </div>
                 </div>
             </div>
 
-            <div id="output" class="output "> <!-- Add 'section' class when adding text-->
+            <div id="results-div" class="output "> <!-- Add 'section' class when adding text-->
               <h3 id="result-text"></h3>
             </div>
 
