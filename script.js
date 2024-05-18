@@ -20,7 +20,7 @@ clearBtn.addEventListener('click', () => { // Clear results div
 
 
 function validateNumber() {
-    const numRegex = /^1?[-\s]?(\()?\d{3}(\))?[-\s]?\d{3}[-\s]?\d{4}$/;
+    const numRegex = /^1?[-\s]?((\(\d{3}\))|\d{3})[-\s]?\d{3}[-\s]?\d{4}$/;
     if (userInput.value.match(numRegex)) {
         return 'Valid US number: ';
     } else {
